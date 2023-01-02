@@ -1,6 +1,7 @@
 import React from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import NavLinks from "./NavLinks";
 
 function Header() {
   return (
@@ -22,6 +23,10 @@ function Header() {
           {/* Darkmode */}
         </div>
       </div>
+
+      {/* NavLinks */}
+      <NavLinks />
+      {/* Search */}
     </header>
   );
 }
