@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { categories } from "../constants";
+import fetchNews from "../utils/fetchNews";
 
-function Home() {
-  return (
-    <div>Home</div>
-  )
+async function Home() {
+  // fetch news data
+  const news: NewsResponse = await fetchNews(categories.join(","));
+
+  return <div>{/* NewsList  */}</div>;
 }
 
-export default Home
+export default Home;
