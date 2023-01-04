@@ -27,7 +27,7 @@ type NewsArticle = {
   language: string;
   image: string | null;
   source: string;
-  published_timestamp: string;
+  published_at: string;
   title: string;
   url: string;
 };
