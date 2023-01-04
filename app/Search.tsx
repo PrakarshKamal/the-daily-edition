@@ -1,5 +1,3 @@
-"use client";
-
 import { useRouter } from "next/navigation";
 import React, { FormEvent, useState } from "react";
 
@@ -17,14 +15,14 @@ function Search() {
 
   return (
     <form
-      onSubmit={(event) => handleSearch}
+      onSubmit={handleSearch}
       className="max-w-6xl mx-auto flex justify-between items-center px-5"
     >
       <input
         type="text"
         placeholder="Search..."
         onChange={(e) => setInput(e.target.value)}
-        className="flex-1 w-full h-14 rounded-sm placeholder-gray-500 text-gray-500 outline-none bg-transparent dark:text-orange-400"
+        className="flex-1 w-full h-16 rounded-sm placeholder-gray-500 text-gray-500 outline-none bg-transparent dark:text-orange-400"
       />
       <button
         type="submit"
