@@ -10,4 +10,10 @@
     capitalize hover:scale-110 transition-transform 
     duration-200 ease-out;
   }
+
+  .headerTitle {
+    @apply font-serif text-4xl capitalize underline 
+    pt-5 px-10 underline-offset-4 decoration-double 
+    decoration-2 decoration-orange-400;
+  }
 }
