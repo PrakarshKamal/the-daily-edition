@@ -8,7 +8,11 @@ type Props = {
 
 function Article({ article }: Props) {
   return (
-    <article className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-lg shadow-lg hover:scale-110 hover:shadow-xl hover:bg-slate-200 duration-200 transition-all ease-out">
+    <article
+      className="bg-slate-100 dark:bg-slate-800 flex flex-col 
+    rounded-lg shadow-lg hover:scale-110 hover:shadow-xl hover:bg-slate-200 
+    duration-200 transition-all ease-out"
+    >
       {article.image && (
         <img
           className="h-60 w-full rounded-t-lg object-cover shadow-md"
@@ -21,7 +25,7 @@ function Article({ article }: Props) {
         <div className="flex-1 flex flex-col p-5">
           <h2 className="font-serif font-bold">{article.title}</h2>
           <section className="flex-1 mt-2">
-            <p className="text-cs line-clamp-3">{article.description}</p>
+            <p className="text-xs line-clamp-3">{article.description}</p>
           </section>
 
           <footer className="text-xs text-right flex ml-auto pt-5 space-x-1 text-gray-400 italic">
