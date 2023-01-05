@@ -1,6 +1,5 @@
 import React from "react";
 import { notFound } from "next/navigation";
-import Article from "../Article";
 import LiveTimestamp from "../LiveTimestamp";
 
 type Props = {
@@ -8,10 +7,10 @@ type Props = {
 };
 
 function ArticlePage({ searchParams }: Props) {
-  //check for article page
+  //check for article page in search params
   if (
-    !searchParams ||
-    (searchParams && Object.entries(searchParams).length === 0)
+    (searchParams && Object.entries(searchParams).length === 0) ||
+    !searchParams
   ) {
     return notFound();
   }
